@@ -183,7 +183,11 @@ def run(fhandle, strict=False):
         #   - no TER in HETATM
         if line.startswith('ATOM'):
 
-            is_gap = (int(line[22:26]) - int(prev_line[22:26])) > 1
+            try:
+                is_gap = (int(line[22:26]) - int(prev_line[22:26])) > 1
+            except:
+                # Upon encountering an atom number parsing error, assume a gap in atom numbers occurred
+                is_gap = True
             if atom_section and (line[21] != prev_line[21] or (not_strict and is_gap)):
                 serial_offset += 1  # account for TER statement
                 yield make_TER(prev_line)
