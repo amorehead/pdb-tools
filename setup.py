@@ -28,7 +28,7 @@ bin_py = [f[:-3] + '=pdbtools.' + f[:-3] + ':main' for f in binfiles
 
 setup(
     name='pdb-tools-no-atom-limit',  # Required
-    version='2.4.5.3',  # Required
+    version='2.4.5',  # Required
     description='A swiss army knife for PDB files, customized to avoid the original atom limit.',  # Optional
     long_description=long_description,  # Optional
     long_description_content_type='text/markdown',  # Optional (see note above)
