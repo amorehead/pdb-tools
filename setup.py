@@ -27,7 +27,7 @@ bin_py = [f[:-3] + '=pdbtools.' + f[:-3] + ':main' for f in binfiles
           if f.endswith('.py')]
 
 setup(
-    name='pdb-tools-no-atom-limit',  # Required
+    name='pdb-tools-removed-atom-limit',  # Required
     version='2.4.5',  # Required
     description='A swiss army knife for PDB files, customized to avoid the original atom limit.',  # Optional
     long_description=long_description,  # Optional
@@ -99,8 +99,8 @@ setup(
     # maintainers, and where to support the project financially. The key is
     # what's used to render the link text on PyPI.
     project_urls={  # Optional
-        'Bug Reports': 'https://github.com/haddocking/pdb-tools/issues',
-        'Source': 'https://github.com/haddocking/pdb-tools',
+        'Bug Reports': 'https://github.com/amorehead/pdb-tools/issues',
+        'Source': 'https://github.com/amorehead/pdb-tools',
     },
 
     # Test Suite
