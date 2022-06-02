@@ -27,7 +27,7 @@ bin_py = [f[:-3] + '=pdbtools.' + f[:-3] + ':main' for f in binfiles
           if f.endswith('.py')]
 
 setup(
-    name='pdb-tools',  # Required
+    name='pdb-tools-no-atom-limit',  # Required
     version='2.4.5',  # Required
     description='A swiss army knife for PDB files.',  # Optional
     long_description=long_description,  # Optional
