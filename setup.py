@@ -28,13 +28,13 @@ bin_py = [f[:-3] + '=pdbtools.' + f[:-3] + ':main' for f in binfiles
 
 setup(
     name='pdb-tools-no-atom-limit',  # Required
-    version='2.4.5.2',  # Required
-    description='A swiss army knife for PDB files.',  # Optional
+    version='2.4.5.3',  # Required
+    description='A swiss army knife for PDB files, customized to avoid the original atom limit.',  # Optional
     long_description=long_description,  # Optional
     long_description_content_type='text/markdown',  # Optional (see note above)
     url='http://bonvinlab.org/pdb-tools',  # Optional
-    author='Joao Rodrigues',  # Optional
-    author_email='j.p.g.l.m.rodrigues@gmail.com',  # Optional
+    author='Alex Morehead',  # Optional
+    author_email='alex.morehead@gmail.com',  # Optional
     license='Apache Software License, version 2',
     classifiers=[  # Optional
         # How mature is this project? Common values are
