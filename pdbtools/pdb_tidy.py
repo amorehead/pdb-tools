@@ -224,11 +224,11 @@ def run(fhandle, strict=False):
                 serial_offset = 0
 
 
-        if serial > 99999:
-            emsg = 'ERROR!! Structure contains more than 99.999 atoms.\n'
-            sys.stderr.write(emsg)
-            sys.stderr.write(__doc__)
-            sys.exit(1)
+        # if serial > 99999:
+        #     emsg = 'ERROR!! Structure contains more than 99.999 atoms.\n'
+        #     sys.stderr.write(emsg)
+        #     sys.stderr.write(__doc__)
+        #     sys.exit(1)
 
         # Check line length
         line = "{:<80}\n".format(line)

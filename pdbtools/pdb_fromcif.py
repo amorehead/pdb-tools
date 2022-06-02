@@ -191,12 +191,12 @@ def run(fhandle):
             atom_num += 1
 
             # Check if structure is too large
-            if atom_num > 99999:
-                emsg = 'ERROR!! Number of atoms exceeds PDB format limit: \'{}\'\n'
-                sys.stderr.write(emsg.format(atom_num))
-                sys.stderr.write(__doc__)
-                sys.exit(1)
-            elif len(chainid) > 1:
+            # if atom_num > 99999:
+            #     emsg = 'ERROR!! Number of atoms exceeds PDB format limit: \'{}\'\n'
+            #     sys.stderr.write(emsg.format(atom_num))
+            #     sys.stderr.write(__doc__)
+            #     sys.exit(1)
+            if len(chainid) > 1:
                 emsg = 'ERROR!! Chain IDs is too large: \'{}\'\n'
                 sys.stderr.write(emsg.format(chainid))
                 sys.stderr.write(__doc__)

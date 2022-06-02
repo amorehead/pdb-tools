@@ -134,10 +134,10 @@ def run(fhandle, starting_value):
             serial_equiv[line[6:11].strip()] = serial
             yield line[:6] + str(serial).rjust(5) + line[11:]
             serial += 1
-            if serial > 99999:
-                emsg = 'Cannot set atom serial number above 99999.\n'
-                sys.stderr.write(emsg)
-                sys.exit(1)
+            # if serial > 99999:
+            #     emsg = 'Cannot set atom serial number above 99999.\n'
+            #     sys.stderr.write(emsg)
+            #     sys.exit(1)
 
         elif line.startswith('ANISOU'):
             # Keep atom id as previous atom
